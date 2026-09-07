@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzeria Amalfi · Dal 1980 · Gardone Val Trompia</title>
+  <meta name="description" content="Pizzeria da asporto a Gardone Val Trompia dal 1980. Impasti leggeri, pizza verace, pizza al metro e consegna a domicilio.">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+  <meta name="theme-color" content="#081026">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Pizzeria Amalfi · Gardone Val Trompia">
+  <meta property="og:description" content="Impasti leggeri, farciture generose e l’accoglienza sincera di una pizzeria di famiglia dal 1980.">
+  <meta property="og:image" content="assets/images/logo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Pizza Cursor Element -->
+  <div id="pizza-pointer" class="pizza-pointer" aria-hidden="true">🍕</div>
+
+  <!-- Main Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#top" class="brand-link" aria-label="Pizzeria Amalfi Home">
+          <img src="assets/images/logo.jpg" alt="Amalfi Pizza logo" class="brand-logo" width="56" height="56">
+          <span class="brand-name">AMALFI</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigazione principale">
+          <a href="#identita" class="nav-link" data-nav-idx="0">Identità</a>
+          <a href="#specialita" class="nav-link" data-nav-idx="1">Specialità</a>
+          <a href="#galleria" class="nav-link" data-nav-idx="2">Galleria</a>
+          <a href="#recensioni" class="nav-link" data-nav-idx="3">Recensioni</a>
+          <a href="#visita" class="nav-link" data-nav-idx="4">Dove siamo</a>
+        </nav>
+
+        <div class="header-actions">
+          <button id="lang-toggle-btn" class="icon-button" aria-label="Change language">EN</button>
+          <button id="theme-toggle-btn" class="icon-button theme-toggle-btn" aria-label="Switch color mode">
+            <!-- Moon / Sun icon inserted via JS -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+          <a href="tel:+390308912486" class="header-call-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span data-i18n="call">Ordina al telefono</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with Background Video -->
+    <section id="top" class="hero-section">
+      <video class="hero-video" src="assets/video/hero.mp4" autoplay muted loop playsinline aria-label="Pizzeria Amalfi video"></video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow" data-i18n="heroEyebrow">Pizzeria da asporto · Dal 1980</p>
+        <h1 class="hero-title" data-i18n="heroTitle">L’arte della pizza in Val Trompia.</h1>
+        <p class="hero-body" data-i18n="heroBody">Impasti leggeri, farciture generose e l’accoglienza sincera di una pizzeria di famiglia.</p>
+        <div class="hero-buttons">
+          <a href="tel:+390308912486" class="hero-button">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span data-i18n="call">Ordina al telefono</span>
+          </a>
+          <a href="#specialita" class="hero-button-outline">
+            <span data-i18n="explore">Scopri le specialità</span>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Identità -->
+    <section id="identita" class="section-shell">
+      <div class="container">
+        <div class="identity-grid">
+          <div>
+            <p class="eyebrow" data-i18n="identityKicker">Amalfi, dal 1980</p>
+            <h2 class="section-title" data-i18n="identityTitle">Una pizza che sa di casa.</h2>
+            <p class="identity-body" data-i18n="identityBody">A Gardone Val Trompia, Amalfi porta avanti una storia familiare fatta di impasti curati, ingredienti scelti e una gentilezza che i clienti ricordano. Una pizzeria da asporto semplice, autentica e amata in Valle.</p>
+          </div>
+          <div class="majolica-card identity-card-inner">
+            <div class="rating-stars">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span class="rating-badge" data-i18n="badge">4,4 su Google</span>
+            </div>
+            <div class="identity-features">
+              <div class="identity-feature-item">
+                <svg class="identity-feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 12 12"/><path d="M12 2v10"/><path d="m19 5-7 7"/><path d="M5 19l7-7"/></svg>
+                <span class="identity-feature-label" data-format-idx="2">Impasto al kamut</span>
+              </div>
+              <div class="identity-feature-item">
+                <svg class="identity-feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                <span class="identity-feature-label" data-format-idx="1">Pizza al metro</span>
+              </div>
+              <div class="identity-feature-item">
+                <svg class="identity-feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="12" x="1" y="3" rx="2"/><circle cx="16" cy="18" r="3"/><circle cx="6" cy="18" r="3"/><path d="M10 8h4"/><path d="M2 13h19"/></svg>
+                <span class="identity-feature-label" data-format-idx="5">Consegna a domicilio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Specialità -->
+    <section id="specialita" class="section-shell specialties-section">
+      <div class="container">
+        <p class="eyebrow eyebrow-gold" data-i18n="specialtiesKicker">Il nostro modo di fare pizza</p>
+        <div class="specialties-header">
+          <h2 class="section-title" data-i18n="specialtiesTitle">Scegli la tua esperienza.</h2>
+          <p class="specialties-body" data-i18n="specialtiesBody">Dalla pizza verace alla pizza al metro: formati diversi, la stessa attenzione all’impasto e alla cottura.</p>
+        </div>
+        <div class="specialties-grid">
+          <!-- Card 1: Pizza verace -->
+          <div class="specialty-card">
+            <svg class="specialty-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
+            <h3 class="specialty-name" data-format-idx="0">Pizza verace</h3>
+          </div>
+          <!-- Card 2: Pizza al metro -->
+          <div class="specialty-card">
+            <svg class="specialty-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            <h3 class="specialty-name" data-format-idx="1">Pizza al metro</h3>
+          </div>
+          <!-- Card 3: Impasto al kamut -->
+          <div class="specialty-card">
+            <svg class="specialty-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 12 12"/><path d="M12 2v10"/><path d="m19 5-7 7"/><path d="M5 19l7-7"/></svg>
+            <h3 class="specialty-name" data-format-idx="2">Impasto al kamut</h3>
+          </div>
+          <!-- Card 4: Focacce -->
+          <div class="specialty-card">
+            <svg class="specialty-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            <h3 class="specialty-name" data-format-idx="3">Focacce</h3>
+          </div>
+          <!-- Card 5: Panini pizza -->
+          <div class="specialty-card">
+            <svg class="specialty-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v3a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-3"/><path d="M21 11a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4Z"/><path d="M7 11h10"/></svg>
+            <h3 class="specialty-name" data-format-idx="4">Panini pizza</h3>
+          </div>
+          <!-- Card 6: Consegna a domicilio -->
+          <div class="specialty-card">
+            <svg class="specialty-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+            <h3 class="specialty-name" data-format-idx="5">Consegna a domicilio</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Galleria -->
+    <section id="galleria" class="section-shell">
+      <div class="container">
+        <div class="gallery-intro">
+          <p class="eyebrow" data-i18n="galleryKicker">Appena sfornata</p>
+          <h2 class="section-title" data-i18n="galleryTitle">La pizza parla da sé.</h2>
+          <p class="gallery-body" data-i18n="galleryBody">Crosta dorata, mozzarella filante e farciture abbondanti. Uno sguardo vero alle pizze preparate ogni sera.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/images/pizza-1.jpg" alt="Pizzeria Amalfi — pizza 1" class="gallery-img" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/pizza-2.jpg" alt="Pizzeria Amalfi — pizza 2" class="gallery-img" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/pizza-3.jpg" alt="Pizzeria Amalfi — pizza 3" class="gallery-img" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/pizza-4.jpg" alt="Pizzeria Amalfi — pizza 4" class="gallery-img" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/pizza-5.jpg" alt="Pizzeria Amalfi — pizza 5" class="gallery-img" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/pizza-6.jpg" alt="Pizzeria Amalfi — pizza 6" class="gallery-img" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/pizza-7.jpg" alt="Pizzeria Amalfi — pizza 7" class="gallery-img" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Recensioni -->
+    <section id="recensioni" class="section-shell reviews-section">
+      <div class="container">
+        <div class="reviews-header">
+          <div>
+            <p class="eyebrow" data-i18n="reviewsKicker">La voce della Valle</p>
+            <h2 class="section-title" data-i18n="reviewsTitle">Amata da chi torna.</h2>
+          </div>
+          <a href="tel:+390308912486" class="cta-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span data-i18n="callNow">Chiamaci ora</span>
+          </a>
+        </div>
+        <div id="reviews-track" class="reviews-track">
+          <!-- Dynamically populated review cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Dove siamo / Visita -->
+    <section id="visita" class="section-shell">
+      <div class="container">
+        <div class="visit-container">
+          <iframe 
+            title="Pizzeria Amalfi map" 
+            class="map-frame" 
+            src="https://www.google.com/maps?q=45.6975867,10.1872855&z=16&output=embed" 
+            loading="lazy" 
+            allowfullscreen>
+          </iframe>
+          <div class="visit-info">
+            <p class="eyebrow eyebrow-gold" data-i18n="visitKicker">Vieni a trovarci</p>
+            <h2 class="section-title" style="color: #FFFFFF;" data-i18n="visitTitle">La tua pizza, questa sera.</h2>
+            <div class="visit-details">
+              <p class="visit-detail-item">
+                <svg class="visit-detail-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="address">Via Matteotti 65, Gardone Val Trompia (BS)</span>
+              </p>
+              <p class="visit-detail-item">
+                <svg class="visit-detail-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>
+                  <strong data-i18n="hours">Ogni giorno</strong><br>
+                  <span data-i18n="time">18:00 — 21:30</span>
+                </span>
+              </p>
+            </div>
+            <div class="visit-actions">
+              <a href="https://www.google.com/maps/place/Pizzeria+Amalfi/@45.6975867,10.1847106,17z/data=!4m6!3m5!1s0x47817c3e303f297d:0x7ffa102d8efac8ee!8m2!3d45.6975867!4d10.1872855!16s%2Fg%2F1hc37nnhr" target="_blank" rel="noreferrer" class="hero-button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                <span data-i18n="directions">Apri indicazioni</span>
+              </a>
+              <a href="tel:+390308912486" class="hero-button-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>030 891 2486</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action Section -->
+    <section class="final-cta-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="finalTitle">Stasera scegli Amalfi.</h2>
+        <p class="final-cta-body" data-i18n="finalBody">Chiama, ordina e passa a ritirare la tua pizza appena sfornata.</p>
+        <a href="tel:+390308912486" class="cta-primary final-cta-btn">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-i18n="call">Ordina al telefono</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand-title">Pizzeria Amalfi</p>
+          <p class="footer-copy" data-i18n="footer">Pizzeria Amalfi · Dal 1980 · Gardone Val Trompia</p>
+        </div>
+        <div class="footer-links">
+          <a href="tel:+390308912486" class="footer-icon" aria-label="Phone">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+          <a href="https://www.google.com/maps/place/Pizzeria+Amalfi/@45.6975867,10.1847106,17z/data=!4m6!3m5!1s0x47817c3e303f297d:0x7ffa102d8efac8ee!8m2!3d45.6975867!4d10.1872855!16s%2Fg%2F1hc37nnhr" target="_blank" rel="noreferrer" class="footer-icon" aria-label="Map">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </a>
+          <a href="https://www.facebook.com/pizzeriadasportoAmalfi/?locale=it_IT" target="_blank" rel="noreferrer" class="footer-icon" aria-label="Facebook" data-i18n="facebook">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
